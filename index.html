@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Radar de Vendas IA - notícias estratégicas, propostas comerciais e automação de e-mails com agentes de IA.">
+  <title>Radar de Vendas IA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">✦</span>
+      <div>
+        <strong>Radar de Vendas IA</strong>
+        <small>Inteligência para vender melhor</small>
+      </div>
+    </div>
+    <nav>
+      <a href="#dashboard">Dashboard</a>
+      <a href="#noticias">Notícias</a>
+      <a href="#propostas">Propostas</a>
+      <a href="#emails">E-mails</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="dashboard">
+      <div>
+        <span class="tag">IMERSÃO ONE • AGENTES DE IA PARA NEGÓCIOS</span>
+        <h1>Transforme informações em <span>ações de vendas</span>.</h1>
+        <p>Um projeto prático que reúne notícias estratégicas, geração de propostas e automação de e-mails em um único painel.</p>
+        <button class="primary" onclick="runSalesAgent()">▶ Executar agente de vendas</button>
+      </div>
+      <div class="hero-card">
+        <span>O agente identificou</span>
+        <strong id="opportunityCount">12</strong>
+        <small>oportunidades para analisar</small>
+        <div class="mini-bar"><i></i></div>
+        <p id="agentStatus">Aguardando execução...</p>
+      </div>
+    </section>
+
+    <section class="metrics">
+      <article><span>Leads analisados</span><strong>148</strong><small>+18% este mês</small></article>
+      <article><span>Oportunidades</span><strong id="metricOpportunities">12</strong><small>priorizadas pela IA</small></article>
+      <article><span>Propostas geradas</span><strong id="metricProposals">7</strong><small>prontas para revisão</small></article>
+      <article><span>E-mails automatizados</span><strong id="metricEmails">24</strong><small>fluxos em andamento</small></article>
+    </section>
+
+    <section class="section" id="noticias">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">AULA 01</span>
+          <h2>Radar de notícias estratégicas</h2>
+        </div>
+        <button class="secondary" onclick="refreshNews()">Atualizar radar</button>
+      </div>
+      <div class="news-grid" id="newsGrid"></div>
+    </section>
+
+    <section class="section" id="propostas">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">AULA 02</span>
+          <h2>Agente de propostas comerciais</h2>
+          <p>Preencha os dados e deixe o agente montar uma proposta personalizada.</p>
+        </div>
+      </div>
+
+      <div class="workspace">
+        <form id="proposalForm" class="panel">
+          <label>Nome do cliente
+            <input id="client" required placeholder="Ex.: Empresa Horizonte">
+          </label>
+          <label>Produto ou serviço
+            <input id="product" required placeholder="Ex.: Automação de atendimento">
+          </label>
+          <label>Principal necessidade
+            <textarea id="need" required placeholder="Ex.: reduzir o tempo de resposta aos clientes"></textarea>
+          </label>
+          <label>Perfil do cliente
+            <select id="profile">
+              <option>Pequena empresa</option>
+              <option>Média empresa</option>
+              <option>Grande empresa</option>
+            </select>
+          </label>
+          <button class="primary" type="submit">✦ Gerar proposta com IA</button>
+        </form>
+
+        <article class="proposal-output panel">
+          <div class="output-head">
+            <span>Resultado do agente</span>
+            <button class="copy-btn" onclick="copyProposal()">Copiar</button>
+          </div>
+          <div id="proposalResult" class="empty-state">
+            <div>✧</div>
+            <p>A proposta gerada aparecerá aqui.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="emails">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">AULA 03</span>
+          <h2>Automação de e-mails</h2>
+          <p>Um fluxo simples para acompanhar cada oportunidade sem perder o timing.</p>
+        </div>
+      </div>
+
+      <div class="email-flow">
+        <article class="flow-card">
+          <span class="step">01</span>
+          <h3>Novo lead</h3>
+          <p>O lead entra no funil e recebe uma mensagem inicial personalizada.</p>
+        </article>
+        <div class="arrow">→</div>
+        <article class="flow-card">
+          <span class="step">02</span>
+          <h3>IA analisa</h3>
+          <p>O agente identifica necessidade, perfil e próximo passo sugerido.</p>
+        </article>
+        <div class="arrow">→</div>
+        <article class="flow-card">
+          <span class="step">03</span>
+          <h3>Follow-up</h3>
+          <p>O sistema prepara o próximo e-mail conforme o estágio da negociação.</p>
+        </article>
+      </div>
+
+      <div class="automation panel">
+        <div>
+          <span class="eyebrow">SIMULAÇÃO</span>
+          <h3>Fluxo pronto para executar</h3>
+          <p id="emailStatus">Nenhum fluxo executado nesta sessão.</p>
+        </div>
+        <button class="primary" onclick="runEmailAutomation()">Executar automação</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Radar de Vendas IA • Projeto educacional criado para a Imersão ONE</p>
+    <p>Feito por Alessandra</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

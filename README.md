@@ -1,73 +1,62 @@
-# Radar de Vendas IA
+# 🎯 Radar de Vendas IA
 
-> Projeto prático da Imersão ONE — Agentes de IA para Negócios.
+Projeto prático desenvolvido durante a **Imersão ONE — Agentes de IA para Negócios**.
+
+🔗 **Repositório do Projeto:** [https://github.com/alessandra-cardozo/rada-vendas-ia](https://github.com/alessandra-cardozo/rada-vendas-ia)
+
+---
 
 ## 🎯 Objetivo
 
-O **Radar de Vendas IA** é um projeto educacional que demonstra como agentes de IA podem apoiar uma equipe comercial em três momentos:
+O **Radar de Vendas IA** é um projeto educacional que demonstra como a lógica de agentes de IA pode apoiar uma equipe comercial em três momentos estratégicos:
 
-1. **Radar de notícias estratégicas** — transforma informações do mercado em sinais que podem gerar oportunidades.
-2. **Agente de propostas comerciais** — recebe informações do cliente e monta uma proposta inicial personalizada.
-3. **Automação de e-mails** — organiza um fluxo de follow-up para não perder oportunidades.
+1. **Radar de notícias estratégicas:** Transforma informações do mercado em sinais para gerar oportunidades de vendas.
+2. **Agente de propostas comerciais:** Captura informações do cliente e gera uma proposta personalizada.
+3. **Automação de e-mails:** Organiza um fluxo lógico de *follow-up* para acompanhamento de leads.
 
-## 🧠 Como o projeto se relaciona às 3 aulas
+---
 
-### Aula 01 — Notícias estratégicas
-O painel apresenta notícias simuladas e destaca o possível impacto comercial. Em uma versão com backend/API, essa etapa pode receber notícias reais, classificar os conteúdos e gerar um resumo personalizado.
+## 🧠 Relação com as 3 Aulas da Imersão
 
-### Aula 02 — Propostas comerciais
-O formulário recebe:
-- cliente;
-- produto/serviço;
-- necessidade;
-- perfil do cliente.
+- **Aula 01 — Notícias Estratégicas:** O painel apresenta notícias e destaca o possível impacto comercial. Em uma versão com backend/API, esta etapa consumirá notícias em tempo real e gerará resumos personalizados.
+- **Aula 02 — Propostas Comerciais:** O formulário recebe os dados do cliente, produto/serviço, valor e perfil. A lógica do agente estrutura uma proposta com objetivo, solução recomendada e próximos passos.
+- **Aula 03 — Fluxo de E-mails:** Demonstra a regra de negócio: *Novo lead → Análise da IA → Follow-up*. O próximo passo será a conexão com ferramentas de CRM/E-mail.
 
-O agente gera uma proposta inicial com objetivo, solução recomendada e próximo passo.
+---
 
-### Aula 03 — E-mails
-O fluxo demonstra a lógica:
-**Novo lead → análise da IA → follow-up.**
+## 🛠️ Tecnologias Utilizadas
 
-Em produção, o próximo passo seria conectar o fluxo a uma ferramenta de e-mail/CRM e registrar o histórico.
+- **HTML5 & CSS3:** Estrutura e estilização da interface.
+- **JavaScript:** Lógica de navegação e simulação das ações do agente no navegador.
+- **Design Responsivo:** Layout adaptado para diferentes tamanhos de tela (desktop e mobile).
 
-## 🛠️ Tecnologias
+---
 
-- HTML5
-- CSS3
-- JavaScript
-- Design responsivo
-- Lógica de agente simulada no navegador
+## ▶️ Como Executar o Projeto
 
-## ▶️ Como executar
+1. Não é necessário instalar dependências.
+2. Clone ou baixe este repositório.
+3. Abra o arquivo `index.html` diretamente no seu navegador (ou utilize a extensão *Live Server* no VS Code).
 
-Não é necessário instalar nada.
+---
 
-1. Baixe ou clone o repositório.
-2. Abra `index.html` no navegador.
+## 🚀 Evoluções Futuras (Roadmap)
 
-Para desenvolvimento, também é possível abrir a pasta no VS Code e usar uma extensão como Live Server.
+- [ ] Integração com chaves e APIs de IA em tempo real.
+- [ ] Busca e classificação automática de notícias reais.
+- [ ] Conexão com CRM e envio de e-mails reais via autorização.
+- [ ] Persistência de dados (salvar propostas em banco de dados).
+- [ ] Autenticação de usuários e Dashboard de indicadores.
 
-## 🚀 Evoluções futuras
+---
 
-- Conectar uma API de IA.
-- Buscar notícias reais.
-- Criar classificação automática de leads.
-- Integrar CRM.
-- Enviar e-mails reais mediante autorização.
-- Salvar propostas em banco de dados.
-- Criar autenticação de usuários.
-- Criar dashboard com indicadores reais.
+## 💡 Conceito do Agente
 
-## 💡 Conceito do agente
+O projeto aplica o ciclo fundamental de um agente de IA:
+`Entrada de Dados ➔ Análise ➔ Decisão / Sugestão ➔ Ação`
 
-O projeto segue uma ideia simples de agente:
-
-**Entrada → análise → decisão/sugestão → ação**
-
-Exemplo:
-
-**Dados do cliente → IA identifica necessidade → proposta personalizada → follow-up**
+---
 
 ## 👩‍💻 Autoria
 
-Feito por **Alessandra** como projeto prático de aprendizado em IA, automação e desenvolvimento web.
+Desenvolvido por **Alessandra Cardozo** como projeto prático de aprendizagem em IA, automação e desenvolvimento web.

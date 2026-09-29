@@ -18,17 +18,17 @@ O **Radar de Vendas IA** é um projeto educacional que demonstra como a lógica 
 
 ## 🧠 Relação com as 3 Aulas da Imersão
 
-- **Aula 01 — Notícias Estratégicas:** O painel apresenta notícias e destaca o possível impacto comercial. Em uma versão com backend/API, esta etapa consumirá notícias em tempo real e gerará resumos personalizados.
-- **Aula 02 — Propostas Comerciais:** O formulário recebe os dados do cliente, produto/serviço, valor e perfil. A lógica do agente estrutura uma proposta com objetivo, solução recomendada e próximos passos.
-- **Aula 03 — Fluxo de E-mails:** Demonstra a regra de negócio: *Novo lead → Análise da IA → Follow-up*. O próximo passo será a conexão com ferramentas de CRM/E-mail.
+- **Aula 01 — Notícias Estratégicas:** O painel apresenta notícias e destaca o possível impacto comercial.
+- **Aula 02 — Propostas Comerciais:** O formulário recebe os dados do cliente, produto/serviço, valor e perfil. A lógica estrutura uma proposta com objetivo, solução recomendada e próximos passos.
+- **Aula 03 — Fluxo de E-mails:** Demonstra a regra de negócio: *Novo lead → Análise da IA → Follow-up*.
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## 🛠️ Desenvolvimento e Tecnologias
 
-- **HTML5 & CSS3:** Estrutura e estilização da interface.
-- **JavaScript:** Lógica de navegação e simulação das ações do agente no navegador.
-- **Design Responsivo:** Layout adaptado para diferentes tamanhos de tela (desktop e mobile).
+- **Código e Front-End:** HTML5, CSS3 e JavaScript desenvolvidos para construir a interface e a lógica de navegação.
+- **Design Responsivo:** Layout adaptado para desktop e dispositivos móveis.
+- **Apoio de IA:** Inteligência Artificial utilizada parcialmente como ferramenta de auxílio durante o processo de desenvolvimento e estruturação do projeto.
 
 ---
 
@@ -42,11 +42,10 @@ O **Radar de Vendas IA** é um projeto educacional que demonstra como a lógica 
 
 ## 🚀 Evoluções Futuras (Roadmap)
 
-- [ ] Integração com chaves e APIs de IA em tempo real.
-- [ ] Busca e classificação automática de notícias reais.
-- [ ] Conexão com CRM e envio de e-mails reais via autorização.
-- [ ] Persistência de dados (salvar propostas em banco de dados).
-- [ ] Autenticação de usuários e Dashboard de indicadores.
+- [ ] Integração com chaves de API em tempo real.
+- [ ] Busca e classificação automática de notícias reais via API.
+- [ ] Conexão com CRM e envio automatizado de e-mails.
+- [ ] Persistência de dados em banco de dados.
 
 ---
 
@@ -59,4 +58,4 @@ O projeto aplica o ciclo fundamental de um agente de IA:
 
 ## 👩‍💻 Autoria
 
-Desenvolvido por **Alessandra Cardozo** como projeto prático de aprendizagem em IA, automação e desenvolvimento web.
+Desenvolvido por **Alessandra Cardozo** como projeto prático de aprendizagem em desenvolvimento web, automação e inteligência artificial.
